@@ -2,8 +2,6 @@
 
 This component make Animated Linear Gradient for all SVG components as child props. You can use this component as loading component like Facebook or Instagram, used for any group of svg.
 
-This component is using [expo](https://expo.io), if you don't want to use expo, feel free to fork this repo and remove expo, and use [react-native-svg](https://github.com/react-native-community/react-native-svg) instead, or use the forked repo [react-native-content-loader](https://github.com/aschenkel/react-native-content-loader)
-
 ## Demo
 
 <table>
@@ -15,12 +13,16 @@ This component is using [expo](https://expo.io), if you don't want to use expo, 
 </table>
 ## Usage
 
-`npm i react-native-svg-animated-linear-gradient --save`
+`npm i rn-content-loader --save`
+
+or
+
+`yarn add rn-content-loader`
 
 Inside your component:
 
 ```js
-import SvgAnimatedLinearGradient from 'react-native-svg-animated-linear-gradient';
+import ContentLoader from 'rn-content-loader';
 ```
 
 ### Examples
@@ -86,20 +88,13 @@ import SvgAnimatedLinearGradient from 'react-native-svg-animated-linear-gradient
 | x2             | String | '100%'    | x of point end gradient, accept Number or Percentage  |
 | y2             | String | '0'       | y of point end gradient, accept Number or Percentage  |
 
-## TODO
-
-- Write test
-
-## My blog about React/React Native
-
-- (Vietnamese only) [Fullstack Station](https://www.businesscard.vn/blog/category/lap-trinh/javascript/react/)
-
 ## Thankful
 
-- [Expo](https://expo.io)
 - [React Native Svg](https://github.com/react-native-community/react-native-svg)
 - [Vova Bilonenko](https://github.com/delfrrr) with [his gist](https://gist.github.com/delfrrr/0ef8871c6c4630b406e73fb66c091cf0)
 - [React Content Loader](https://github.com/danilowoz/react-content-loader)
+- [Create Content Loader](http://danilowoz.com/create-content-loader/)
+- [React Native SVG Animated Linear Gradient](https://github.com/virusvn/react-native-svg-animated-linear-gradient)
 
 ## License
 
