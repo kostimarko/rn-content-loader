@@ -148,7 +148,7 @@ class ContentLoader extends Component {
   }
 }
 
-EventCardLoader.propTypes = {
+ContentLoader.propTypes = {
   primaryColor: PropTypes.string,
   secondaryColor: PropTypes.string,
   duration: PropTypes.number,
@@ -159,7 +159,7 @@ EventCardLoader.propTypes = {
   x2: PropTypes.string,
   y2: PropTypes.string
 };
-EventCardLoader.defaultProps = {
+ContentLoader.defaultProps = {
   primaryColor: '#eeeeee',
   secondaryColor: '#dddddd',
   duration: 2000,
