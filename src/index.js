@@ -102,48 +102,50 @@ class ContentLoader extends Component {
     });
   }
   render() {
+    let {
+      height,
+      width
+    } = this.props
     return (
-      <View style={{ marginBottom: 25 }}>
-        <AnimatedSvg width={width - 20} height={300}>
-          <Defs>
-            <LinearGradient
-              id="grad"
-              x1={this.props.x1}
-              y1={this.props.y1}
-              x2={this.props.x2}
-              y2={this.props.y2}
-            >
-              <Stop
-                offset={this.state.offsets[0]}
-                stopColor={this.props.primaryColor}
-                stopOpacity="1"
-              />
-              <Stop
-                offset={this.state.offsets[1]}
-                stopColor={this.props.secondaryColor}
-                stopOpacity="1"
-              />
-              <Stop
-                offset={this.state.offsets[2]}
-                stopColor={this.props.primaryColor}
-                stopOpacity="1"
-              />
-            </LinearGradient>
-            <ClipPath id="clip">
-              <G>{this.props.children}</G>
-            </ClipPath>
-          </Defs>
+      <AnimatedSvg width={width} height={height}>
+        <Defs>
+          <LinearGradient
+            id="grad"
+            x1={this.props.x1}
+            y1={this.props.y1}
+            x2={this.props.x2}
+            y2={this.props.y2}
+          >
+            <Stop
+              offset={this.state.offsets[0]}
+              stopColor={this.props.primaryColor}
+              stopOpacity="1"
+            />
+            <Stop
+              offset={this.state.offsets[1]}
+              stopColor={this.props.secondaryColor}
+              stopOpacity="1"
+            />
+            <Stop
+              offset={this.state.offsets[2]}
+              stopColor={this.props.primaryColor}
+              stopOpacity="1"
+            />
+          </LinearGradient>
+          <ClipPath id="clip">
+            <G>{this.props.children}</G>
+          </ClipPath>
+        </Defs>
 
-          <Rect
-            x="0"
-            y="0"
-            height={300}
-            width={width - 20}
-            fill="url(#grad)"
-            clipPath="url(#clip)"
-          />
-        </AnimatedSvg>
-      </View>
+        <Rect
+          x="0"
+          y="0"
+          height={height}
+          width={width}
+          fill="url(#grad)"
+          clipPath="url(#clip)"
+        />
+      </AnimatedSvg>
     );
   }
 }
