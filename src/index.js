@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { View, StyleSheet, Animated, Text, Dimensions } from 'react-native';
+import React, { Component } from "react";
+import { View, StyleSheet, Animated, Text, Dimensions } from "react-native";
 import Svg, {
   Rect,
   Defs,
@@ -7,24 +7,24 @@ import Svg, {
   Stop,
   ClipPath,
   G
-} from 'react-native-svg';
-import PropTypes from 'prop-types';
+} from "react-native-svg";
+import PropTypes from "prop-types";
 
 const AnimatedSvg = Animated.createAnimatedComponent(Svg);
-const { interpolate } = require('d3-interpolate');
+const { interpolate } = require("d3-interpolate");
 
-const { width } = Dimensions.get('window');
+const { width } = Dimensions.get("window");
 
 class ContentLoader extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      offsetValues: ['-2', '-1.5', '-1'],
+      offsetValues: ["-2", "-1.5", "-1"],
       offsets: [
-        '0.0001',
-        '0.0002',
-        '0.0003' // Avoid duplicate value cause error in Android
+        "0.0001",
+        "0.0002",
+        "0.0003" // Avoid duplicate value cause error in Android
       ],
       frequence: props.duration / 2
     };
@@ -35,10 +35,10 @@ class ContentLoader extends Component {
 
   offsetValueBound(x) {
     if (x > 1) {
-      return '1';
+      return "1";
     }
     if (x < 0) {
-      return '0';
+      return "0";
     }
     return x;
   }
@@ -53,7 +53,7 @@ class ContentLoader extends Component {
     if (!this._isMounted) return;
     // setup interpolate
     let interpolator = interpolate(this.state, {
-      offsetValues: ['1', '1.5', '2']
+      offsetValues: ["1", "1.5", "2"]
     });
 
     // start animation
@@ -102,10 +102,7 @@ class ContentLoader extends Component {
     });
   }
   render() {
-    let {
-      height,
-      width
-    } = this.props
+    let { height, width } = this.props;
     return (
       <AnimatedSvg width={width} height={height}>
         <Defs>
@@ -162,14 +159,14 @@ ContentLoader.propTypes = {
   y2: PropTypes.string
 };
 ContentLoader.defaultProps = {
-  primaryColor: '#eeeeee',
-  secondaryColor: '#dddddd',
+  primaryColor: "#eeeeee",
+  secondaryColor: "#dddddd",
   duration: 2000,
   width: 300,
   height: 200,
-  x1: '0',
-  y1: '0',
-  x2: '100%',
-  y2: '0'
+  x1: "0",
+  y1: "0",
+  x2: "100%",
+  y2: "0"
 };
 export default ContentLoader;
