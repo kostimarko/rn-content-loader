@@ -71,16 +71,17 @@ import ContentLoader from 'rn-content-loader';
 
 ### Props
 
-| Prop           | Type   | Default   | Description                                           |
-| -------------- | ------ | --------- | ----------------------------------------------------- |
-| primaryColor   | String | '#eeeeee' | Primary color, also background color                  |
-| secondaryColor | String | '#dddddd' | Secondary color                                       |
-| width          | Number | 300       | Width of SVG                                          |
-| height         | Number | 200       | Height of SVG                                         |
-| x1             | String | '0'       | x of point star gradient, accept Number or Percentage |
-| y1             | String | '0'       | y of point star gradient, accept Number or Percentage |
-| x2             | String | '100%'    | x of point end gradient, accept Number or Percentage  |
-| y2             | String | '0'       | y of point end gradient, accept Number or Percentage  |
+| Prop           | Type   | Default       | Description                                           |
+| -------------- | ------ | ---------     | ----------------------------------------------------- |
+| primaryColor   | String | '#eeeeee'     | Primary color, also background color                  |
+| secondaryColor | String | '#dddddd'     | Secondary color                                       |
+| width          | Number | 300           | Width of SVG                                          |
+| height         | Number | 200           | Height of SVG                                         |
+| viewBox        | String | '0 0 300 200' | ViewBox of SVG                                        |
+| x1             | String | '0'           | x of point star gradient, accept Number or Percentage |
+| y1             | String | '0'           | y of point star gradient, accept Number or Percentage |
+| x2             | String | '100%'        | x of point end gradient, accept Number or Percentage  |
+| y2             | String | '0'           | y of point end gradient, accept Number or Percentage  |
 
 ## Thankful
 
