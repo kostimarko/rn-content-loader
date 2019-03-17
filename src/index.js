@@ -102,9 +102,9 @@ class ContentLoader extends Component {
     });
   }
   render() {
-    let { height, width } = this.props;
+    let { height, width, viewBox=`0 0 ${width} ${height}` } = this.props;
     return (
-      <AnimatedSvg width={width} height={height}>
+      <AnimatedSvg width={width} height={height} viewBox={viewBox}>
         <Defs>
           <LinearGradient
             id="grad"
@@ -153,6 +153,7 @@ ContentLoader.propTypes = {
   duration: PropTypes.number,
   width: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   height: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  viewBox: PropTypes.string,
   x1: PropTypes.string,
   y1: PropTypes.string,
   x2: PropTypes.string,
