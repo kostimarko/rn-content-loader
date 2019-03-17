@@ -1,6 +1,6 @@
 {
   "name": "rn-content-loader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A react native content loader without expo",
   "repository": {
     "type": "git",
