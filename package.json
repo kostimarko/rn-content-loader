@@ -1,29 +1,29 @@
 {
-  "name": "rn-content-loader",
-  "version": "0.0.4",
-  "description": "A react native content loader without expo",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/kostimarko/react-native-content-loader"
-  },
-  "author": "Kosti Marko",
-  "license": "MIT",
-  "keywords": [
-    "react-native-svg",
-    "react",
-    "svg",
-    "animated",
-    "animation",
-    "linear",
-    "gradient"
-  ],
-  "peerDependencies": {
-    "react": "16.5.0",
-    "react-native": "0.57.1",
-    "react-native-svg": "^7.0.3",
-    "prop-types": "^15.6.2"
-  },
-  "dependencies": {
-    "d3-interpolate": "^1.3.2"
-  }
+    "name": "rn-content-loader",
+    "version": "0.0.5",
+    "description": "A react native content loader without expo",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kostimarko/react-native-content-loader"
+    },
+    "author": "Kosti Marko",
+    "license": "MIT",
+    "keywords": [
+        "react-native-svg",
+        "react",
+        "svg",
+        "animated",
+        "animation",
+        "linear",
+        "gradient"
+    ],
+    "peerDependencies": {
+        "react": "16.5.0",
+        "react-native": "0.57.1",
+        "react-native-svg": "^7.0.3",
+        "prop-types": "^15.6.2"
+    },
+    "dependencies": {
+        "d3-interpolate": "^1.3.2"
+    }
 }
