@@ -4,7 +4,7 @@
     "description": "A react native content loader without expo",
     "repository": {
         "type": "git",
-        "url": "https://github.com/kostimarko/react-native-content-loader"
+        "url": "https://github.com/kostimarko/rn-content-loader"
     },
     "author": "Kosti Marko",
     "license": "MIT",
