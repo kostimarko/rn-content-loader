@@ -15,7 +15,7 @@ declare module 'rn-content-loader' {
   }
 
 
-  const ContentLoader: React.FC<ContentLoaderProps>;
+  const ContentLoader: React.Component<ContentLoaderProps>;
 
   export default ContentLoader;
 }
