@@ -14,7 +14,6 @@ declare module 'rn-content-loader' {
     y2?: string;
   }
 
-
   const ContentLoader: React.ComponentClass<ContentLoaderProps, {}>;
 
   export default ContentLoader;
