@@ -16,6 +16,7 @@ jobs:
               with:
                   node-version: 10.16.3
                   registry-url: https://registry.npmjs.org/
+            - run: npm version patch
             - run: npm publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.npm_token}}
